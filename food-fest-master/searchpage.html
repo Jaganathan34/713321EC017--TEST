@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/a5302f9e5d.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Reem+Kufi&display=swap" rel="stylesheet">
+    <!-- == link css == -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navigation-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo"><span>food fest</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <!-- desktop navigation -->
+                    <div class="desk-navigation">
+                        <ul>
+                            <li> <a href="index.html">home</a> </li>
+                            <li class="active"> <a href="searchpage.html">collections</a></li>
+                            <li>purchase list</li>
+                            <li>post ad</li>
+                            <li class="profile">
+                                <div class="notification">
+                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- mobile navigation -->
+            <div class="pull-right mobile-menu">
+
+                <span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="searchpage.html">collections</a>
+                    <a href="#">purchase list</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main-home">
+
+
+        <div class="jumbotron desktop-tab-header search-page-header">
+            <div class="header-details">
+                <h1>Food fest</h1>
+                <h2>buying and selling couldnt be easier than this</h2>
+                <div class="header-search-inputs">
+                    <div class="row">
+                        <div class="drop-down">
+                            <form action="#">
+                                <select id="cars" name="cars">
+                                    <option value="volvo">All departments</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="drop-down search-input  ">
+                            <form action="/action_page.php">
+                                <input type="search" id="g-search" name="gsearch">
+                            </form>
+                        </div>
+                        <div class="drop-down search-input ">
+                            <form action="/action_page.php">
+                                <input type="search" id="gsearch" name="gsearch">
+                            </form>
+                        </div>
+                        <div class="drop-down submit-search ">
+                            <button> search </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="mobile-soartings">
+            <h2 class="dummy">dummy</h2>
+            <ul class="rent-owner">
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Rent
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">owner ship
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="rent-owner">
+                <li class="title">type</li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Entire space
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="rent-owner">
+                <li class="title">size</li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Entire space
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="rent-owner">
+                <li class="title">price range</li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Entire space
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">private room
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+
+        </section>
+
+        <section class="search-results-page">
+            <div class="search-details-sp">
+                <h5>138 results from food fest Hamburger</h5>
+            </div>
+            <div class="container-fluid">
+                <div class="products-search-sp row">
+                    <aside class="col-lg-3 desktop-soarting">
+                        <ul class="rent-owner r-1">
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Rent
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">owner ship
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="rent-owner ">
+                            <li class="title">type</li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Entire space
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="rent-owner">
+                            <li class="title">size</li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Entire space
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="rent-owner">
+                            <li class="title">price range</li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Entire space
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">private room
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </aside>
+                    <div class="col-lg-9 mobil-r-se">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/hum3.png" class="card-img" alt="hum">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Large Burrito , a meal for lunch and dinner</h5>
+                                        <div class="card-text">
+                                            <div class="order-ready">
+                                                ready for order
+                                            </div>
+                                        </div>
+
+                                        <h6>from: food fest, US </h6>
+                                        <div class="card-buttons">
+                                            <div class="add-collection">
+                                                <div>
+                                                    <h6>23, nov 2019</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-tags">
+                                                45$
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- card -->
+
+
+
+                    </div>
+                    <div class="next-page-buttons">
+                        <a href="#" class="previous">1</a>
+                        <a href="#" class="next">2</a>
+                        <a href="#" class="next">3</a>
+                        <a href="#" class="next">4</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-4 logo-sec">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo"><span>food fest</span>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        Integer tincidunt. Cras dapibus.</p>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12   col-lg-4 category-sec">
+                <div class="cat-sec-de">
+                    <h5>categories</h5>
+                </div>
+                <ul>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                </ul>
+
+            </div>
+            <div class="col-xs-12 col-md-12   col-lg-4 footer-input">
+                 <h5>have a taste of the best burgers in town</h5>
+                <img src="images/footerbug.png" alt="foot">
+
+            </div>
+        </div>
+    </div>
+        <div class="foot-social-ff">
+            <div class="copy-right">
+                 <small>developed with love by peter robert all rights reserved</small>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- my scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
